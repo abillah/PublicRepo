@@ -1,0 +1,15 @@
+{
+  "physicalTable": {
+    "name": "Dim_DW_CXS_OPPORTUNITY_SNAPSHOT_F_RevnSnapshot",
+    "sourceTable": "physicalTable:Oracle_Data_Warehouse.OAX$OAC.DW_CXS_OPPORTUNITY_SNAPSHOT_F",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "SNAPSHOT_ID",
+        "OPPORTUNITY_ID"
+      ]
+    ]
+  }
+}

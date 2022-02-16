@@ -1,0 +1,55 @@
+{
+  "logicalTable" : {
+    "name" : "Z - Container for Unexposed Common Physical Objects",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "UPDATE_TS",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "S_NQ_EPT",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:BIS_CACHE_MANAGEMENT.OAX$INFRA.S_NQ_EPT.UPDATE_TS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DummyText",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "MLS_RPD_MSG_VL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle_Data_Warehouse.OAX$OAC.MLS_RPD_MSG_VL.LANGUAGE_CODE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "S_NQ_EPT",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:BIS_CACHE_MANAGEMENT.OAX$INFRA.S_NQ_EPT" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "MLS_RPD_MSG_VL",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Oracle_Data_Warehouse.OAX$OAC.MLS_RPD_MSG_VL" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}

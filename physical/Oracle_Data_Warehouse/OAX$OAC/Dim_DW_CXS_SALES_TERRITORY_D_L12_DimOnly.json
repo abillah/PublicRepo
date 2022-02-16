@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Dim_DW_CXS_SALES_TERRITORY_D_L12_DimOnly",
+    "sourceTable": "physicalTable:Oracle_Data_Warehouse.OAX$OAC.DW_CXS_SALES_TERRITORY_D",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "TERRITORY_VERSION_ID"
+      ]
+    ]
+  }
+}

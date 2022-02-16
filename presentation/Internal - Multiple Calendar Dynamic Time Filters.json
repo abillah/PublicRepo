@@ -1,0 +1,19 @@
+{
+  "subjectArea" : {
+    "name" : "Internal - Multiple Calendar Dynamic Time Filters",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "sourceBusinessModel" : "businessModel:Core",
+    "implicitFactColumn" : "logicalColumn:Core.Fact - Multiple Calendar Time Filters for Appshell.Record Count",
+    "hideIfTrue" : {
+      "expressionTemplate" : "1 = 1"
+    },
+    "tableOrder" : [ {
+      "name" : "presentationTable:Internal - Multiple Calendar Dynamic Time Filters.Time"
+    } ],
+    "localization" : {
+      "localizationKey" : "Internal - Multiple Calendar Dynamic Time Filters",
+      "nameVariable" : "VALUEOF(NQ_SESSION.CN_Internal_-_Multiple_Calendar_Dynamic_Time_Filters)",
+      "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_Internal_-_Multiple_Calendar_Dynamic_Time_Filters)"
+    }
+  }
+}

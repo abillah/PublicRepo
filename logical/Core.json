@@ -1,0 +1,858 @@
+{
+  "businessModel" : {
+    "name" : "Core",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "disable" : false,
+    "joins" : [ {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Product Unit of Measure",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Competitor",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Product Unit of Measure",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Close Reason",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Channel Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Strategic",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Channel Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Strategic",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Status Category",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Close Reason",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Close Reason",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Close Reason",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Channel Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Strategic",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Strategic",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Channel Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Risk Level",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Decision",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Deal Horizon",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Contact",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Contact",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Z - Container for Unexposed Common Physical Objects",
+      "rightTable" : "logicalTable:Core.Dim - Date Fiscal Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - Multiple Calendar Time Filters for Appshell",
+      "rightTable" : "logicalTable:Core.Dim - Multiple Calendar Driving Dimension Type for Appshell",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - Multiple Calendar Time Filters for Appshell",
+      "rightTable" : "logicalTable:Core.Dim - Multiple Calendar Time Filters for Appshell",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Territory",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Resource - Credit Receiver",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Expected Close Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Revenue Line Actual Close Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Stage Enter Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Stage Exit Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Contact",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Resource - Opportunity Owner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Sales Stage",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Sales Account",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Revenue Line Expected Close Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Product",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Resource - Sales Account Owner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Resource - Territory Owner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Resource - Opportunity Owner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Resource - Opportunity Owner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Sales Account",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Expected Close Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Actual Close Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Sales Stage",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Competitor",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Revenue Line Actual Close Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - Business Unit",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Partner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Expected Close Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - Currency",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Snapshot Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Revenue Line Expected Close Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Actual Close Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Z - Container for Unexposed Financials Physical Objects",
+      "rightTable" : "logicalTable:Core.Dim - Date Fiscal Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Expected Close Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - Business Unit",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Actual Close Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Expected Close Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Actual Close Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - Business Unit",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - Business Unit",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Expected Close Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Competitor",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Partner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - Customer Sold To",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Resource - Opportunity Owner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - Customer Sold To",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - Customer Sold To",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - Customer Sold To",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Sales Account",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Line of Business",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Line of Business",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Line of Business",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Line of Business",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Revenue Line",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Sales Credit Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Recurring Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Close Reason",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Opportunity",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Split Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Contact",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Close Reason",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Territory",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Status",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - Customer Sold To",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Recurring Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - Business Unit",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Partner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Resource - Opportunity Owner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - Dynamic Time Filters For Appshell",
+      "rightTable" : "logicalTable:Core.Dim - Dynamic Time Filters For Appshell",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Account",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Custom",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Category",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Custom",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Stage Progression",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Category",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Opportunity",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Revenue Line Actual Close Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Line Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Opportunity",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Line of Business",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Status Category",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Status",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Sales Stage",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Risk Level",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Recurring Frequency",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Stage Enter Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Custom",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Historical Sales Stage",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Recurring Frequency",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Stage Exit Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Decision",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Decision",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Account",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Sales Credit Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Deal Horizon",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Account",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Revenue Line Expected Close Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Risk Level",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Resource - Credit Receiver",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Decision",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Line Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Custom",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Deal Horizon",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Competitor",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Opportunity",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Status Category",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Split Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Account",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Status",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Sales Account",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Opportunity",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Decision",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Custom",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Status",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Security - Account",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Revenue Line Actual Close Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Status Category",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Channel Type",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Deal Horizon",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Revenue Line",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Risk Level",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Status Category",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Contact",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Status",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Revenue Line Snapshot Date Enterprise Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Partner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Status Category",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Header",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Status Category",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - Currency",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Risk Level",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Strategic",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Stage Progression",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Stage Status Category",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Close Reason",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Status",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Revenue Status",
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Date - Opportunity Revenue Line Expected Close Date Gregorian Calendar",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity Deal Horizon",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Sales Stage",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Revenue Line Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Product",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Opportunity",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Sales Account",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Partner",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:Core.Fact - CX - Opportunity Snapshot",
+      "rightTable" : "logicalTable:Core.Dim - CX - Primary Competitor",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

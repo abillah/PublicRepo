@@ -1,0 +1,21 @@
+{
+  "physicalTable": {
+    "name": "Dim_DW_CXS_PRODUCT_GROUP_CF_DN_DH_Hier",
+    "sourceTable": "physicalTable:Oracle_Data_Warehouse.OAX$OAC.DW_CXS_PRODUCT_GROUP_CF_DN_DH",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "INVENTORY_ITEM_ID",
+        "PRODUCT_ID"
+      ],
+      [
+        "INVENTORY_ITEM_ID"
+      ],
+      [
+        "PRODUCT_ID"
+      ]
+    ]
+  }
+}

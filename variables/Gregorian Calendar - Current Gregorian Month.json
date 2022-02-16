@@ -1,0 +1,23 @@
+{
+  "initBlock" : {
+    "name" : "Gregorian Calendar - Current Gregorian Month",
+    "description" : "Defaults to the current gregorian month",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle_Data_Warehouse.Oracle_Data_Warehouse_Repository_Initblocks_Connection_Pool",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT DISTINCT CAL_MONTH_CODE FROM DW_MONTH_D WHERE CURRENT_CAL_MONTH_CODE='Current'"
+    } ],
+    "variables" : [ {
+      "name" : "CURRENT_GREGORIAN_MONTH",
+      "value" : "'2000 / 12'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : true
+  }
+}

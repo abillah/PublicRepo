@@ -1,0 +1,11 @@
+{
+  "presentationTable" : {
+    "name" : "Fact - Variance ( by Opportunity Revenue Line Expected Close Date)",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "localization" : {
+      "localizationKey" : "Fact - Variance ( by Opportunity Revenue Line Expected Close Date)",
+      "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Fact_-_Variance_(_by_Opportunity_Revenue_Line_Expected_Close_Date))",
+      "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Fact_-_Variance_(_by_Opportunity_Revenue_Line_Expected_Close_Date))"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "physicalTable": {
+    "name": "Fact_DW_CXS_OPPORTUNITY_REVENUE_SNAPSHOT_CF_OptySnap_Year",
+    "sourceTable": "physicalTable:Oracle_Data_Warehouse.OAX$OAC.DW_CXS_OPPORTUNITY_REVENUE_SNAPSHOT_CF",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "OPPORTUNITY_ID",
+        "REVENUE_ID",
+        "SNAPSHOT_DATE"
+      ]
+    ]
+  }
+}

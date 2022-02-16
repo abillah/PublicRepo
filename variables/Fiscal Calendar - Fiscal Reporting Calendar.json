@@ -1,0 +1,23 @@
+{
+  "initBlock" : {
+    "name" : "Fiscal Calendar - Fiscal Reporting Calendar",
+    "description" : "Defaults to the calendar selected in the configuration.",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle_Data_Warehouse.Oracle_Data_Warehouse_Repository_Initblocks_Connection_Pool",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT CASE WHEN NOT EXISTS (SELECT PARAMETER_CODE FROM DW_CONTENT_PARAM_CONFIG WHERE PARAMETER_CODE='PARAM_ERP_FINANCIALS_CALENDAR_ID') THEN 'ABCTest123ABC' ELSE (SELECT NVL(PARAMETER_VALUE,'ABCTest123ABC') FROM DW_CONTENT_PARAM_CONFIG WHERE PARAMETER_CODE='PARAM_ERP_FINANCIALS_CALENDAR_ID') END AS PARAMETER_VALUE FROM DUAL"
+    } ],
+    "variables" : [ {
+      "name" : "FISCAL_CALENDAR",
+      "value" : "'ABCTest123ABC'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : true
+  }
+}

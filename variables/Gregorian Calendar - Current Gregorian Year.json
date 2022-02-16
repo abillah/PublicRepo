@@ -1,0 +1,23 @@
+{
+  "initBlock" : {
+    "name" : "Gregorian Calendar - Current Gregorian Year",
+    "description" : "Defaults to the current gregorian year",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle_Data_Warehouse.Oracle_Data_Warehouse_Repository_Initblocks_Connection_Pool",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT DISTINCT CAL_YEAR_ID FROM DW_YEAR_D WHERE CURRENT_CAL_YEAR_CODE='Current'"
+    } ],
+    "variables" : [ {
+      "name" : "CURRENT_GREGORIAN_YEAR",
+      "value" : "'2000'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : true
+  }
+}

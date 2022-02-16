@@ -1,0 +1,15 @@
+{
+  "physicalTable": {
+    "name": "Dim_DW_CXS_OPPORTUNITY_REVENUE_CF_Opportunity_DimOnly",
+    "sourceTable": "physicalTable:Oracle_Data_Warehouse.OAX$OAC.DW_CXS_OPPORTUNITY_REVENUE_CF",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "OPPORTUNITY_ID",
+        "REVENUE_ID"
+      ]
+    ]
+  }
+}

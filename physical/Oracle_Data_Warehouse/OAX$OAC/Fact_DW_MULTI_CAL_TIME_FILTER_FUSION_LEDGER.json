@@ -1,0 +1,9 @@
+{
+  "physicalTable": {
+    "name": "Fact_DW_MULTI_CAL_TIME_FILTER_FUSION_LEDGER",
+    "sourceTable": "physicalTable:Oracle_Data_Warehouse.OAX$OAC.DW_MULTI_CAL_TIME_FILTER_FUSION_LEDGER",
+    "caching": {
+      "enable": true
+    }
+  }
+}

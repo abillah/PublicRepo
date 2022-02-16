@@ -1,0 +1,23 @@
+{
+  "initBlock" : {
+    "name" : "Gregorian Calendar - Current Gregorian Day",
+    "description" : "Defaults to the current gregorian day",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle_Data_Warehouse.Oracle_Data_Warehouse_Repository_Initblocks_Connection_Pool",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT DISTINCT TO_CHAR(CALENDAR_DATE) FROM DW_DAY_D WHERE  CURRENT_CAL_DAY_CODE='Current'"
+    } ],
+    "variables" : [ {
+      "name" : "CURRENT_GREGORIAN_DAY",
+      "value" : "'31-DEC-2000'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : true
+  }
+}

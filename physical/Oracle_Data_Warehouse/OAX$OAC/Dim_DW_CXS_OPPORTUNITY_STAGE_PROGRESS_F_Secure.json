@@ -1,0 +1,9 @@
+{
+  "physicalTable": {
+    "name": "Dim_DW_CXS_OPPORTUNITY_STAGE_PROGRESS_F_Secure",
+    "sourceTable": "physicalTable:Oracle_Data_Warehouse.OAX$OAC.DW_CXS_OPPORTUNITY_STAGE_PROGRESS_F",
+    "caching": {
+      "enable": true
+    }
+  }
+}

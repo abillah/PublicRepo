@@ -1,0 +1,117 @@
+{
+  "database" : {
+    "name" : "BIS_CACHE_MANAGEMENT",
+    "databaseType" : "ORACLE_DATABASE",
+    "connectionPools" : [ {
+      "name" : "Connection_Pool",
+      "callInterface" : "OCI_12C",
+      "maxConnections" : 10,
+      "requiresFullyQualifedTableNames" : true,
+      "connectionTimeout" : 5,
+      "connectionTimeoutUnit" : "MINUTES",
+      "multithreaded" : true,
+      "supportParams" : true,
+      "writeBackConfig" : {
+        "dbSupportsUnicode" : false,
+        "bulkInsertBufferSize" : 10485760,
+        "transactionBoundary" : 1000,
+        "tempTablePrefix" : "TT"
+      }
+    } ],
+    "featureOverrides" : [ {
+      "name" : "RAND_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "PERF_PREFER_IN_LISTS",
+      "value" : false
+    }, {
+      "name" : "FRACTIONAL_SECOND_PRECISION",
+      "value" : 6
+    }, {
+      "name" : "MAX_BULK_FETCH_BUFFER_SIZE",
+      "value" : 327680
+    } ],
+    "virtualPrivateDatabase" : false,
+    "crmMetadataTables" : false,
+    "allowDirectDatabaseRequests" : false,
+    "allowPopulateQueries" : false,
+    "queryLimits" : [ {
+      "accessor" : "role:OA4F_CONTENT_REPORTING_CONFIG",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    }, {
+      "accessor" : "role:OA4F_COMMON_DATA_ADMIN_ANALYSIS_DUTY",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    }, {
+      "accessor" : "role:ServiceAdmin",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    }, {
+      "accessor" : "role:OA4F_CX_OPTY_PROG_ANALYSIS_DUTY",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    }, {
+      "accessor" : "role:OA4F_CX_REVN_LINE_SNP_ANALYSIS_DUTY",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    }, {
+      "accessor" : "role:OA4F_CX_OPTY_ANALYSIS_DUTY",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    }, {
+      "accessor" : "role:OA4F_CX_REVN_LINE_ANALYSIS_DUTY",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    }, {
+      "accessor" : "role:OA4F_CX_OPTY_SNP_ANALYSIS_DUTY",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    }, {
+      "accessor" : "role:OA4F_CX_SALES_OPTY_DATA",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    }, {
+      "accessor" : "role:OA4F_CX_SALES_ACCNT_DATA",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    }, {
+      "accessor" : "role:OA4F_CX_SALES_OPTY_CUSTOM_DATA",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 600,
+      "directDatabaseRequests" : "INHERIT"
+    } ]
+  }
+}

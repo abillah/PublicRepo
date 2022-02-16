@@ -1,0 +1,21 @@
+{
+  "initBlock" : {
+    "name" : "Infra Schema Name",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle_Data_Warehouse.Oracle_Data_Warehouse_Repository_Initblocks_Connection_Pool",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT 'OAX$INFRA' FROM DUAL"
+    } ],
+    "variables" : [ {
+      "name" : "INFRA_SCHEMA_NAME",
+      "value" : "'OAX$INFRA'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : true
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "presentationColumns" : [ {
+      "name" : "Pillar",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Dim - Dynamic Time Filters For Appshell.Pillar",
+      "localization" : {
+        "localizationKey" : "Pillar",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Pillar)",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Pillar)"
+      }
+    }, {
+      "name" : "Calendar Type",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Dim - Dynamic Time Filters For Appshell.Calendar Type",
+      "localization" : {
+        "localizationKey" : "Calendar Type",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Calendar_Type)",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Calendar_Type)"
+      }
+    }, {
+      "name" : "Time Level",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Dim - Dynamic Time Filters For Appshell.Time Level",
+      "localization" : {
+        "localizationKey" : "Time Level",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Time_Level)",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Time_Level)"
+      }
+    }, {
+      "name" : "Time Sequence",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Dim - Dynamic Time Filters For Appshell.Time Sequence",
+      "localization" : {
+        "localizationKey" : "Time Sequence",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Time_Sequence)",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Time_Sequence)"
+      }
+    }, {
+      "name" : "Time Value",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Dim - Dynamic Time Filters For Appshell.Time Value",
+      "localization" : {
+        "localizationKey" : "Time Value",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Time_Value)",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Time_Value)"
+      }
+    }, {
+      "name" : "Source",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Dim - Dynamic Time Filters For Appshell.Source",
+      "localization" : {
+        "localizationKey" : "Source",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Source)",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Source)"
+      }
+    }, {
+      "name" : "Record Count",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - Dynamic Time Filters For Appshell.Record Count",
+      "localization" : {
+        "localizationKey" : "Record Count",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Record_Count)",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time_Record_Count)"
+      }
+    } ],
+    "localization" : {
+      "localizationKey" : "Time",
+      "nameVariable" : "VALUEOF(NQ_SESSION.CN_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time)",
+      "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_Internal_-_Reporting_Calendar_Dynamic_Time_Filters_Time)"
+    }
+  }
+}

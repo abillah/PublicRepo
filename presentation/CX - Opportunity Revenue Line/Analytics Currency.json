@@ -1,0 +1,174 @@
+{
+  "presentationTable" : {
+    "name" : "Analytics Currency",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "presentationColumns" : [ {
+      "name" : "Open Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Open Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "localization" : {
+        "localizationKey" : "Open Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))"
+      }
+    }, {
+      "name" : "Open Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Open Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "localization" : {
+        "localizationKey" : "Open Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))"
+      }
+    }, {
+      "name" : "Open Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Open Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "localization" : {
+        "localizationKey" : "Open Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))"
+      }
+    }, {
+      "name" : "Won Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Won Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "localization" : {
+        "localizationKey" : "Won Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))"
+      }
+    }, {
+      "name" : "Won Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Won Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "localization" : {
+        "localizationKey" : "Won Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))"
+      }
+    }, {
+      "name" : "Won Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Won Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "localization" : {
+        "localizationKey" : "Won Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))"
+      }
+    }, {
+      "name" : "Lost Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Lost Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "localization" : {
+        "localizationKey" : "Lost Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Lost_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Lost_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))"
+      }
+    }, {
+      "name" : "Lost Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Lost Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "localization" : {
+        "localizationKey" : "Lost Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Lost_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Lost_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))"
+      }
+    }, {
+      "name" : "Lost Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Lost Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "localization" : {
+        "localizationKey" : "Lost Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Lost_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Lost_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))"
+      }
+    }, {
+      "name" : "No Sale Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.No Sale Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "localization" : {
+        "localizationKey" : "No Sale Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_No_Sale_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_No_Sale_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))"
+      }
+    }, {
+      "name" : "No Sale Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.No Sale Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "localization" : {
+        "localizationKey" : "No Sale Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_No_Sale_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_No_Sale_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))"
+      }
+    }, {
+      "name" : "No Sale Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.No Sale Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "localization" : {
+        "localizationKey" : "No Sale Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_No_Sale_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_No_Sale_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))"
+      }
+    }, {
+      "name" : "Average Won Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Average Won Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "localization" : {
+        "localizationKey" : "Average Won Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Average_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Average_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))"
+      }
+    }, {
+      "name" : "Average Won Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Average Won Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "localization" : {
+        "localizationKey" : "Average Won Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Average_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Average_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))"
+      }
+    }, {
+      "name" : "Average Won Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Average Won Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "localization" : {
+        "localizationKey" : "Average Won Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Average_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Average_Won_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))"
+      }
+    }, {
+      "name" : "Weighted Open Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Weighted Open Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+      "localization" : {
+        "localizationKey" : "Weighted Open Opportunity Line Revenue in Analytics Currency Same Time Last Year (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Weighted_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Weighted_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Year_(Change_%))"
+      }
+    }, {
+      "name" : "Weighted Open Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Weighted Open Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+      "localization" : {
+        "localizationKey" : "Weighted Open Opportunity Line Revenue in Analytics Currency Same Time Last Quarter (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Weighted_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Weighted_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Quarter_(Change_%))"
+      }
+    }, {
+      "name" : "Weighted Open Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+      "sourceLogicalColumn" : "logicalColumn:Core.Fact - CX - Opportunity Revenue Line.Weighted Open Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+      "localization" : {
+        "localizationKey" : "Weighted Open Opportunity Line Revenue in Analytics Currency Same Time Last Period (Change %)",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Weighted_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))",
+        "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency_Weighted_Open_Opportunity_Line_Revenue_in_Analytics_Currency_Same_Time_Last_Period_(Change_%))"
+      }
+    } ],
+    "localization" : {
+      "localizationKey" : "Analytics Currency",
+      "nameVariable" : "VALUEOF(NQ_SESSION.CN_CX_-_Opportunity_Revenue_Line_Analytics_Currency)",
+      "descriptionVariable" : "VALUEOF(NQ_SESSION.CD_CX_-_Opportunity_Revenue_Line_Analytics_Currency)"
+    }
+  }
+}
