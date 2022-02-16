@@ -1,0 +1,21 @@
+{
+  "initBlock" : {
+    "name" : "Enterprise Calendar Type",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle_Data_Warehouse.Oracle_Data_Warehouse_Repository_Initblocks_Connection_Pool",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT CASE WHEN PARAMETER_VALUE='Gregorian' THEN 1 ELSE 0 END AS ENTERPRISE_CALENDAR_TYPE FROM DW_CONTENT_PARAM_CONFIG WHERE PARAMETER_CODE='PARAM_GLOBAL_ENTERPRISE_CALENDAR'"
+    } ],
+    "variables" : [ {
+      "name" : "ENTERPRISE_CALENDAR_TYPE",
+      "value" : "0",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : true
+  }
+}

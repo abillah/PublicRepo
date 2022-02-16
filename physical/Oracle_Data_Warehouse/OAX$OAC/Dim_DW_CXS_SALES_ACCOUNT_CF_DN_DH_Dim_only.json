@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Dim_DW_CXS_SALES_ACCOUNT_CF_DN_DH_Dim_only",
+    "sourceTable": "physicalTable:Oracle_Data_Warehouse.OAX$OAC.DW_CXS_SALES_ACCOUNT_CF_DN_DH",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "BASE_LEVEL_ACCOUNT_PARTY_ID"
+      ]
+    ]
+  }
+}

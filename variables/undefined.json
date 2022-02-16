@@ -1,0 +1,32 @@
+{
+  "initBlock" : {
+    "name" : "rowWiseInitVariables",
+    "description" : "rpd repository row-wise init variables",
+    "type" : "SESSION",
+    "variables" : [ {
+      "name" : "AM_CX_-_Opportunity",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    }, {
+      "name" : "AM_CX_-_Opportunity_Revenue_Line",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    }, {
+      "name" : "AM_CX_-_Opportunity_Revenue_Line_Snapshot",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    }, {
+      "name" : "AM_CX_-_Opportunity_Snapshot",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    }, {
+      "name" : "AM_CX_-_Opportunity_Stage_Progression",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : false
+  }
+}

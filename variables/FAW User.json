@@ -1,0 +1,21 @@
+{
+  "initBlock" : {
+    "name" : "FAW User",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle_Data_Warehouse.Oracle_Data_Warehouse_Repository_Initblocks_Connection_Pool",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT 'VALUEOF(NQ_SESSION.USER)' FROM DUAL"
+    } ],
+    "variables" : [ {
+      "name" : "USER",
+      "value" : "'-1'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : true
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : true
+  }
+}

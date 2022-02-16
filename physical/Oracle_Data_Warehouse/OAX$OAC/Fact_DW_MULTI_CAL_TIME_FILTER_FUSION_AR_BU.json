@@ -1,0 +1,9 @@
+{
+  "physicalTable": {
+    "name": "Fact_DW_MULTI_CAL_TIME_FILTER_FUSION_AR_BU",
+    "sourceTable": "physicalTable:Oracle_Data_Warehouse.OAX$OAC.DW_MULTI_CAL_TIME_FILTER_FUSION_AR_BU",
+    "caching": {
+      "enable": true
+    }
+  }
+}

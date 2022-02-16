@@ -1,0 +1,23 @@
+{
+  "initBlock" : {
+    "name" : "Gregorian Calendar - Current Gregorian Quarter",
+    "description" : "Defaults to the current gregorian quarter",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline Snapshot", "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle_Data_Warehouse.Oracle_Data_Warehouse_Repository_Initblocks_Connection_Pool",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT DISTINCT CAL_QUARTER_CODE FROM DW_QUARTER_D WHERE CURRENT_CAL_QTR_CODE='Current'"
+    } ],
+    "variables" : [ {
+      "name" : "CURRENT_GREGORIAN_QUARTER",
+      "value" : "'2000 Q 4'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : true
+  }
+}

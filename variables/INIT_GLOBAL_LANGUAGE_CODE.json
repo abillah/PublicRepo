@@ -1,0 +1,23 @@
+{
+  "initBlock" : {
+    "name" : "INIT_GLOBAL_LANGUAGE_CODE",
+    "description" : "Init Block to populate GLOBAL_LANGUAGE_CODE.",
+    "tags" : [ "Fusion Analytics Warehouse - Sales Pipeline" ],
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle_Data_Warehouse.Oracle_Data_Warehouse_Repository_Initblocks_Connection_Pool",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT PARAMETER_VALUE FROM DW_CONTENT_PARAM_CONFIG WHERE PARAMETER_CODE='PARAM_GLOBAL_FAW_LANGUAGES'"
+    } ],
+    "variables" : [ {
+      "name" : "GLOBAL_LANGUAGE_CODE",
+      "value" : "'US'",
+      "enableUsersToSetValue" : true,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : true
+  }
+}

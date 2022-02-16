@@ -1,0 +1,9 @@
+{
+  "physicalTable": {
+    "name": "Fact_DW_CXS_OPPORTUNITY_STAGE_PROGRESS_F",
+    "sourceTable": "physicalTable:Oracle_Data_Warehouse.OAX$OAC.DW_CXS_OPPORTUNITY_STAGE_PROGRESS_F",
+    "caching": {
+      "enable": true
+    }
+  }
+}
